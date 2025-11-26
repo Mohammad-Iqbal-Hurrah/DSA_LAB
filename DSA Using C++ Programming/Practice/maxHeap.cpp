@@ -18,10 +18,7 @@ int* maxHeap(int arr[], int size)
             j = parent;
         }
     }
-    for (int i = 0; i < size; i++)
-    {
-        cout<<newArr[i]<<" ";
-    }
+    
     return newArr;
 }
 int main()
@@ -29,9 +26,9 @@ int main()
     int arr[] = {4,1,9,8,6,3};
     int size = 6;
     int* newArr = maxHeap(arr,size);
-    // for (int i = 0; i < size; i++)
-    // {
-    //     cout<<newArr[i]<<" ";
-    // }
+    for (int i = 0; i < size; i++)
+    {
+        cout<<newArr[i]<<" ";
+    }
     return 0;
 }
