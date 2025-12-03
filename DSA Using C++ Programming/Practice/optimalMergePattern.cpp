@@ -28,6 +28,7 @@ int optimalMergePattern(int arr[], int size)
         }
         size--;                // reduce the size by 1
         bubbleSort(arr, size); // sort the array again if a larger element comes at index 0
+        // optimalMergePattern(arr,size);   //wrong answer
     }
     return cost;
 }
