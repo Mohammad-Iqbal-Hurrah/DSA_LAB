@@ -58,10 +58,10 @@ int main()
         getRandArr(original, n);
         int *arr = new int[n];
         copyArr(original, arr, n);
-        double start = clock();
+        clock_t start = clock();
         bubbleSort(arr, n);
-        double end = clock();
-        cout << "Random array time " << (end - start) * 1000 / CLOCKS_PER_SEC << " ms \n";
+        clock_t end = clock();
+        cout << "Random array time " << (end - start)* 1000 / CLOCKS_PER_SEC << " ms \n";
 
         copyArr(original, arr, n);
         bubbleSort(arr, n);
